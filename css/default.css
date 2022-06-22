@@ -1,0 +1,32 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Ubuntu', sans-serif;
+   outline: none;
+   border: none;
+}
+
+:root{
+   --white: #fff;
+   --regular-purple: #771AC9;
+   --regular-light-purple: #821ddb;
+   --light-purple: #8D1CF5;
+   --grey: #F0F1F5;
+   
+   /* title */
+   --black: #202020;
+   
+   /* tags */
+   --tag-grey: #342745;
+   --tag-regular-purple: #512090;
+   --tag-light-purple: #9060CB;
+   --tag-white-purple: #B8A0D5;
+}
+
+body, html {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}

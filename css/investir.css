@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --white: white;
+    --regular-purple: #771AC9;
+    --regular-light-purple: #821DDB;
+    --light-purple: #8D1CF5;
+    --grey: #F0F1F5;
+    --grey-hover: #dadada;
+    --black: #202020;
+    --tag-grey: #342745;
+    --tag-regular-purple: #512090;
+    --tag-light-purple: #9060CB;
+    --tag-white-purple: #B8A0D5;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 110px;
+    background: var(--regular-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_container {
+    width: 1300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header_container button {
+    width: 38px;
+    height: 38px;
+    border-radius: 4px;
+    background: var(--regular-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header_container button:hover {
+    background: var(--regular-light-purple);
+}
+
+.header_container h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+/* main */
+
+main {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/* investimento infos */
+
+.main_container .investimento_infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 35px;
+}
+
+.main_container .investimento_infos .investimento_tipo {
+    padding: 5px 15px;
+    background: var(--regular-purple);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.main_container .investimento_infos .investimento_banco {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.main_container .investimento_infos .investimento_porcentagem {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.main_container .investimento_infos .investimento_valores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.main_container .investimento_infos .investimento_valores .valor_minimo {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--regular-purple);
+}
+
+.main_container .investimento_infos .investimento_valores .valor_minimo span {
+    font-weight: bold;
+}
+
+.main_container .investimento_infos .investimento_valores .valor_vencimento {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--regular-purple);
+}
+
+.main_container .investimento_infos .investimento_valores .valor_vencimento span {
+    font-weight: bold;
+}
+
+/* investimento form */
+
+.main_container .investimento_form {
+    width: 100%;
+    height: 246px;
+    border: 2px solid var(--grey);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container .investimento_form h2 {
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--regular-purple);
+    margin-bottom: 8px;
+}
+
+.main_container .investimento_form .saldo_atual {
+    font-weight: 400;
+    font-size: 14px;
+    background: var(--regular-purple);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.main_container .investimento_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main_container .investimento_form form input {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--regular-purple);
+    border: none;
+    border-bottom: 1px solid var(--regular-purple);
+    padding-bottom: 8px;
+    width: 300px;
+    margin-bottom: 8px;
+}
+
+.main_container .investimento_form form .form_buttons {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main_container .investimento_form form .form_buttons button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.main_container .investimento_form form .form_buttons .cancelar {
+    background: var(--grey);
+    color: var(--black);
+}
+
+.main_container .investimento_form form .form_buttons .cancelar:hover {
+    background: var(--grey-hover);
+}
+
+.main_container .investimento_form form .form_buttons .confirmar {
+    background: var(--regular-purple);
+    color: var(--white);
+}
+
+.main_container .investimento_form form .form_buttons .confirmar:hover {
+    background: var(--tag-light-purple);
+    color: var(--white);
+}
+
+/* responsivo */
+
+@media screen and (max-width: 1350px) {
+
+    /* header */
+    .header_container {
+        width: 100%;
+        margin: 0 50px;
+    }
+
+    /* main */
+    .main_container {
+        width: 100%;
+        margin: 0 50px;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    /* main */
+    .main_container .investimento_infos .investimento_valores {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+
+    /* header */
+    .header_container button img {
+        width: 27px;
+    }
+
+    .header_container h2 {
+        font-size: 18px;
+    }
+    
+
+    /* main */
+    main {
+        margin-top: 30px;
+    }
+
+    .main_container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    /* investimento infos */
+
+    .main_container .investimento_infos {
+        row-gap: 20px;
+    }
+
+    .main_container .investimento_infos .investimento_tipo {
+        font-size: 12px;
+    }
+
+    .main_container .investimento_infos .investimento_banco {
+        font-size: 18px;
+    }
+
+    .main_container .investimento_infos .investimento_porcentagem {
+        font-size: 14px;
+    }
+
+    .main_container .investimento_infos .investimento_valores .valor_minimo {
+        font-size: 14px;
+    }
+
+    .main_container .investimento_infos .investimento_valores .valor_vencimento {
+        font-size: 14px;
+    }
+
+    /* investimento form */
+
+    .main_container .investimento_form h2 {
+        font-size: 18px;
+    }
+
+    .main_container .investimento_form .saldo_atual {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .main_container .investimento_form form input {
+        font-size: 18px;
+    }
+
+    .main_container .investimento_form form .form_buttons button {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    /* header */
+    .header_container {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    /* main */
+    main {
+        margin-top: 30px;
+    }
+
+    .main_container {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .main_container .investimento_form {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .main_container .investimento_form form input {
+        width: 100%;
+    }
+    
+    .main_container .investimento_form form .form_buttons {
+        width: 100%;
+    }
+    
+}
